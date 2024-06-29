@@ -1,0 +1,122 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+/*Definindo tamanho, largura, cor e posicionamento do cabeçalho e da logo*/
+header{
+    background-color: #75E4D5;
+    height: 200px;
+    margin-bottom: 100px;
+}
+#logo img{
+    max-width: 384px;
+    max-height: 230px;
+    width: auto;
+    height: auto;
+
+}
+#logo-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*-------------------------------------------------*/
+
+/*Definindo tamanho, largura e posicionamento dos intes na main*/
+#imagemDePerfil img{
+    max-width: 202px;
+    max-height: 242px;
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 200px;
+    padding: 10px;
+    border: 5px solid black;
+}
+
+
+main{
+    width: 50%;
+    clear: both;
+}
+#info-container{
+    float: right;
+}
+#nomeUsuario, #telefoneUsuario, #idUser, #quantDenuncias{
+    float: right;
+}
+/*-------------------------------------------------*/
+
+/*Definindo tamanho, cor das letras, cor de fundo, posicionamento dos botões
+de navegação e histórico de denúncias*/
+nav{
+    height: 200px;
+    position: absolute;
+    width: 100%;
+    top: 60%;
+}
+#conteudo{
+    margin-top: 20px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+#imagemDePerfil {
+    margin-right: 20px; 
+}
+
+nav {
+    text-align: center;
+}
+button{
+    background-color: #75E4D5;
+    color: black;
+    border: 0px;
+    border-radius: 10px;
+    height: 30%;
+    width: 200px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+input{
+    margin-right: 100px;
+}
+/*Responsividade para telas grandes*/
+@media screen and (min-width: 1330px ) and (max-width: 1430px) {
+    main{
+        width: 45%;
+    }
+}
+@media screen and (min-width: 1431px ) and (max-width: 1500px) {
+    main{
+        width: 42%;
+    }
+}
+@media screen and (min-width: 1501px ) and (max-width: 1600px) {
+    main{
+        width: 40%;
+    }
+}
+@media screen and (min-width: 1600px ) and (max-width: 1700px) {
+    main{
+        width: 38%;
+    }
+}
+@media screen and (min-width: 1701px ) and (max-width: 1780px) {
+    main{
+        width: 37%;
+    }
+}
+@media screen and (min-width: 1781px ) and (max-width: 1829px) {
+    main{
+            width: 35%;
+        }
+}
+@media screen and (min-width: 1830px ) {
+    main{
+        width: 33%;
+    }
+}

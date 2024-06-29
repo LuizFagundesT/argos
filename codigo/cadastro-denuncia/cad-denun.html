@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Denúnica</title>
+    <link rel="stylesheet" href="assets/cad-denun.css">
+    <!-- COLOCAR O LOGO COMO IMAGEM DA ABA DA PAGINA -->
+</head>
+
+
+<body>
+    
+    <div id="container">
+
+
+        <div id="logo">
+            <img src="assets/img/Logo sem fundo 1.jpg" alt="imagem da logo da empresa Argos com fundo branco.">
+        </div>
+
+
+
+        <h1 style="text-align: center;">Faça sua Denúnica</h1>
+
+
+        <form id="forms">
+
+
+            
+
+            <fieldset>
+
+
+                <!--FAZENDO UM SELETOR PARA O ASSUNTO DA DENUNCIA-->
+                <div class="elementos">
+                    <span id="message"></span>
+                    <label for="cep" >Digite o CEP</label>
+                    
+                    <input type="text" id="cep" required>
+                </div>
+
+                <div class="elementos">
+                    <label for="endereco" >Endereço</label>
+                    <input type="text" id="endereco" required>
+                </div>
+
+                <div class="elementos">
+                    <label for="bairro" >Bairro</label>
+                    <input type="text" id="bairro" required>
+                </div>
+
+                <div class="elementos">
+                    <label for="cidade" >Cidade</label>
+                    <input type="text" id="cidade" required>
+                </div>
+
+                
+
+
+                    
+                <div class="elementos">
+                        <label for="estado" >Estado </label>
+                        <select id="estado" required>
+                            <option value="">Selecione um estado</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                        
+                    </div>
+
+            </fieldset>
+
+            <fieldset>
+                <!--FAZENDO UM SELETOR PARA O ASSUNTO DA DENUNCIA-->
+                <div class="elementos" >
+                    <label for="assunto" >Assunto da Denúnica</label>
+                    <select id="assunto" required >
+                        <option selected disabled value="">Selecione...</option>
+                        <option value="Infraestrutura Publica">Infraestrutura Pública</option>
+                        <option value="Segurança">Segurança</option>
+                        <option value="Risco a Saude">Risco a Saúde</option>
+                    </select>
+                </div>
+
+                <div class="elementos">
+                    <label for="gravidade" >Gravidade</label>
+                    <select id="gravidade" required>
+                        <option selected disabled value="">Selecione...</option>
+                        <option value="Alta">Alta</option>
+                        <option value="Intermediária">Intermediária</option>
+                        <option value="Baixa">Baixa</option>
+                    </select>
+                </div>
+                
+                <div class="elementos">
+                    <label for="região" >Região</label>
+                    <select id="região" required>
+                        <option selected disabled value="">Selecione...</option>
+                        <option value="norte">Norte</option>
+                        <option value="sul">Sul</option>
+                        <option value="leste">Leste</option>
+                        <option value="oeste">Oeste</option>
+                        
+                    </select>
+                </div>
+
+                <div class="elementos">
+                    <label>Descrição da Denúnica</label>
+                    <textarea id="descrição" rows="10"></textarea>
+                </div>
+                
+            </fieldset>
+            <br>
+
+
+        
+        <br>
+        </form>
+
+
+
+        
+        <br>
+        <br>
+        
+        <div id="elementosubmit">
+            <div id="elementomidia">
+                <input type="file" id="fileInput" class="file-input" style="display: none;">
+
+                <button onclick="document.getElementById('fileInput').click()" class="custom-button"><strong>Adicionar Midia</strong></button>
+            </div>
+            <br>
+            <br>
+            <button type="submit" class="botão" id="envio"><strong>Enviar</strong> </button>
+
+        
+            <br><br>
+            <button type="submit" class="botão-home" id="envio"><strong><a href="../home-denuncias/assets/home.html">Home de Denúncias</a></strong> </button>
+        </div>
+    </div>
+
+
+    <script src="assets/cadastro-denun.js"></script>
+</body>
+</html>

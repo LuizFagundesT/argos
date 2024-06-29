@@ -1,0 +1,110 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.top-bar {
+    background-color: cyan;
+    color: rgb(0, 38, 255);
+    padding: 20px 20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+}
+
+.line {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+h2 {
+    align-items: center;
+}
+
+.container {
+    display: flex;
+}
+
+.form {
+    flex: 1;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.form-group input,
+.form-group select {
+    width: calc(50% - 30px);
+    margin-left: 250px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    -webkit-appearance: none;  /* Remove default styling on Safari */
+    -moz-appearance: none;     /* Remove default styling on Firefox */
+    appearance: none;          /* Remove default styling on modern browsers */
+}
+
+.form-group select {
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23007bff" d="M2 0L0 2h4zm0 5L0 3h4z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px;
+    padding-right: 30px; /* Adjust for dropdown arrow */
+}
+
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#map {
+    width: 100%;
+    height: 500px; /* Ajuste a altura do mapa conforme necessário */
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer {
+    background-color: navy;
+    color: white;
+    padding: 150px;
+    text-align: center;
+}
+
+.botao {
+    display: block;
+    width: 30%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 350px;
+}
+
+.buscar-btn:hover {
+    background-color: #8f8f8f;
+}

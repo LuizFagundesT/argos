@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aba de Perfil</title>
+    <link rel="stylesheet" href="../aba-perfil/assets/aba-perfil-arquivos/aba-perfil.css">
+</head>
+
+<body onload="imprimeDados()">
+    <header id="logo">
+        <div id="logo-div">
+            <img src="../aba-perfil/assets/imgs/Logo sem fundo.png" alt="Logo da Argos">
+        </div>
+    </header>
+    <!--Logo e carregamento da página junto à função imprimeDados-->
+
+    <main>
+        <div id="imagemDePerfil">
+            <img src="../aba-perfil/assets/imgs/iconos de persona de avatar negro_ icono de perfil de usuario.jpg"
+                alt="">
+        </div>
+        <div id="info-container">
+            <p><strong>Nome:</strong> <span id="nomeUsuario"></span></p>
+            <p><strong>Telefone:</strong> <span id="telefoneUsuario"></span></p>
+            <p><strong>ID do Usuário:</strong> <span id="idUser"></span></p>
+            <p><strong>Número de Denúncias:</strong> <span id="quantDenuncias"></span></p>
+        </div>
+    </main>
+    <!--Informações do banco de dados-->
+    <nav>
+        <button id="botaoParaDenuncia"><a href="#">Modificar Endereço</a></button>
+        <button>Filtro</button>
+        <button onclick="toggle('conteudo')">Mostrar Denuncias</button>
+        <div id="conteudo">
+            Você não possui denúncias.
+        </div>
+    </nav>
+    <!--botões com funcionalidades que serão implementadas durantes as próximas sprints-->
+    <script src="../aba-perfil/assets/aba-perfil-arquivos/aba-perfil.js"></script>
+</body>
+
+</html>

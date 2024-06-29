@@ -1,0 +1,103 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 120%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header img{
+    width: 300px;
+    
+}
+header{
+    background-color:#75E4D5 ;
+    height: 150px;
+}
+.boxComentarios input{
+    width: 400px;
+    padding: 5px;
+    outline: none;
+}
+.hide{
+    display:none;
+}
+#comentarioS{
+    list-style: none;
+    text-align: start;
+    width: 75%;
+    margin: 0 auto;
+}
+.comentario{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    word-wrap: break-word;
+    max-width: 68ch; 
+    /*feitos por luiz */
+    background-color:#75E4D5 ;
+    border-radius: 30px;
+    padding: 5px;
+    border: solid 2px black;
+    
+}
+
+#btn{
+    background-color:#75E4D5 ;
+    border-radius: 30px;
+    padding: 10px;
+    border: solid 2px black;
+}
+#btn:hover{
+    background-color: rgb(2, 221, 2);
+}
+
+.delete{
+    width: 80px;
+}
+.edit{
+    width: 80px;
+}
+.texto{
+    margin-bottom: 10px;
+    border-radius: 16px;
+    background-color: #75e4d556;
+}
+.dataHora{
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+#comentarioS{
+    padding: 20px 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+/*estilizando botoões */
+
+.edit:hover {
+    background-color: rgba(0, 0, 255, 0.596);
+    padding: 5px;
+}
+
+.delete:hover{
+    background-color: rgba(255, 0, 0, 0.558);
+    padding: 5px;
+}
+
+.edit{
+    border-radius: 16px;
+}
+
+.delete{
+    border-radius: 16px;
+}
+
+.btnER{
+    background-color: #75E4D5;
+    border-radius: 16px;
+    padding: 5px;
+}
+
+.btnER:hover{
+    background-color: rgb(2, 221, 2);
+}
