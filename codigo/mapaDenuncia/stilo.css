@@ -16,6 +16,7 @@ body {
     font-weight: bold;
     text-align: center;
     font-size: 40px;
+    
 }
 
 .line {
@@ -97,14 +98,25 @@ h2 {
     display: block;
     width: 30%;
     padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
+    background-color: #75E4D5;
+    color: black;
+    border: 3px solid black;
+    border-radius: 10px;
     cursor: pointer;
     margin-left: 350px;
 }
 
+.botao:hover{
+    background-color: #8f8f8f;
+}
+
 .buscar-btn:hover {
     background-color: #8f8f8f;
+}
+
+#estado{
+    border: solid 2px black;
+}
+#regiao{
+    border: solid 2px black;
 }

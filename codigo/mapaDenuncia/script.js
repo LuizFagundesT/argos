@@ -1,7 +1,7 @@
 function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
         center: { lat: -14.2350, lng: -51.9253 }, // Centro aproximado do Brasil
-        zoom: 4
+        zoom: 6
     });
 
     window.searchLocation = function () {
@@ -41,76 +41,27 @@ function initMap() {
         if (locations[estado]) {
             map.setCenter(locations[estado]);
             map.setZoom(7); // Ajuste o nível de zoom conforme necessário
+
+            addRandomPoints(map);
         } else {
             alert('Localização não encontrada!');
         }
     };
 }
 
-// let map;
-// const markers = [];
+function addRandomPoints(map) {
+    // Função para gerar coordenadas aleatórias dentro dos limites do Brasil
+    function getRandomCoordinate() {
+        const lat = Math.random() * (5.27 - (-33.75)) + (-33.75); // Latitude entre -33.75 e 5.27
+        const lng = Math.random() * (-32.39 - (-73.99)) + (-73.99); // Longitude entre -73.99 e -32.39
+        return { lat: lat, lng: lng };
+    }
 
-// // Pontos de interesse (POIs)
-// const pois = {
-//     "AC": [
-//         { lat: -9.97499, lng: -67.8243 },
-//         { lat: -10.0, lng: -67.8 },
-//         // Adicione mais pontos conforme necessário
-//     ],
-//     "AL": [
-//         { lat: -9.5713, lng: -36.7820 },
-//         { lat: -9.6, lng: -36.7 },
-//         // Adicione mais pontos conforme necessário
-//     ],
-//     // Adicione mais estados e seus pontos aqui
-//     "SP": [
-//         { lat: -23.5505, lng: -46.6333 },
-//         { lat: -23.5558, lng: -46.6396 },
-//         { lat: -23.5640, lng: -46.6500 },
-//         { lat: -23.5629, lng: -46.6558 },
-//         // Adicione mais pontos conforme necessário
-//     ]
-// };
-
-// function initMap() {
-//     map = new google.maps.Map(document.getElementById('map'), {
-//         center: { lat: -14.2350, lng: -51.9253 }, // Centro aproximado do Brasil
-//         zoom: 4
-//     });
-// }
-
-// function searchLocation() {
-//     const estado = document.getElementById('estado').value;
-
-//     const locations = {
-//         "AC": { lat: -9.0238, lng: -70.8120 },
-//         "AL": { lat: -9.5713, lng: -36.7820 },
-//         "SP": { lat: -23.5505, lng: -46.6333 },
-//         // Adicione mais coordenadas de estados aqui
-//         // ...
-//     };
-
-//     if (locations[estado]) {
-//         const center = locations[estado];
-//         map.setCenter(center);
-//         map.setZoom(7); // Ajuste o nível de zoom conforme necessário
-
-//         // Remover marcadores antigos
-//         markers.forEach(marker => marker.setMap(null));
-//         markers.length = 0;
-
-//         // Adicionar novos marcadores
-//         if (pois[estado]) {
-//             pois[estado].forEach(poi => {
-//                 const marker = new google.maps.Marker({
-//                     position: poi,
-//                     map: map
-//                 });
-//                 markers.push(marker);
-//             });
-//         }
-//     } else {
-//         alert('Localização não encontrada!');
-//     }
-// }
-
+    for (let i = 0; i < 100; i++) {
+        const randomCoordinate = getRandomCoordinate();
+        new google.maps.Marker({
+            position: randomCoordinate,
+            map: map
+        });
+    }
+}

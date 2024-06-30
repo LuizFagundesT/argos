@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro-Argos</title>
+    <link rel="stylesheet" href="StyleCadastro.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+</head>
+
+
+<body>
+    
+
+<div class="container-cadastro">
+    <form class="f-cadastro">
+        <section class="s-imagem">
+            <img src="Imagens/logo.png">
+        </section>
+
+     
+        <div class="c-layout">
+            <label class="l-senha">Email</label>
+
+            <div class="c-input">
+                <input type="email" class="style-input" id="email">
+
+            </div>
+
+        </div>
+
+
+        <div class="c-layout">
+            <label class="l-senha">Senha</label>
+
+            <div class="s-input">
+                
+                <input type="password" class="style-input" id="senha">
+                <i class="bi bi-eye-fill" id="btn-senha" onclick="mostrarSenha()"></i>
+            </div>
+
+        </div>
+
+        <div class="c-layout">
+            <labe class="l-senha">N° de Telefone</label>
+
+            <div class="c-input">
+                <input type="text" class="style-input" id="telefone">
+
+            </div>
+
+        </div>
+
+
+        <div class="c-layout">
+            <label class="l-senha">Gênero</label>
+
+            <div class="c-input">
+                <select class="style-input" id="genero">
+                    <option ></option>
+                    <option value="M">MASCULINO</option>
+                    <option value="F">FEMININO</option>
+                    <option value="PF">PREFIRO NÃO DIZER</option>
+                    </select>   
+            </div>
+
+        </div>
+
+
+        <div class="btn-cadastro">
+            <button id="btn" type="submit">Cadastrar</button>
+        </div>
+
+
+
+
+    </form>
+</div>
+
+<script src="JS/CadastroJS.js"></script>
+</body>
+</html>
