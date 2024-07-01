@@ -30,15 +30,22 @@ form.addEventListener('submit',(event) => {
     if (generoSelect.value ===""){
         alert("Por favor,selecione o seu gênero");
     }
-    form.submit();
+   
+    openNewPage('../home-denuncias/assets/home.html');
+
 });
+
+
+function openNewPage(url) {
+    window.open(url, '_blank');
+}
 
 // Função que valida e-mail
 
 function isEmailValid(email){
     // Cria uma regex para validar email
     const emailRegex = new RegExp(
-    /^[a-zA-z0-9._-]+@[a-zA-z0-9._-]+\.[a-zA-Z]{2,}$/
+    /^[a-zA-z0-9.-]+@[a-zA-z0-9.-]+\.[a-zA-Z]{2,}$/
 
     );
 
@@ -77,6 +84,15 @@ function mostrarSenha(){
         inputPass.setAttribute("type", "password")
         btnShowPass.classList.replace('bi-eye-slash-fill','bi-eye-fill')
     }
+
+
+    // Função que abre uma nova página ou janela
+function openNewPage() {
+    // Aqui você pode definir a URL da página para onde deseja redirecionar
+    const url = 'home.html';
+    // Abre uma nova janela ou aba com a URL especificada
+
+}
 
 
 }
